@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.7135678391959799" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="520.0" prefWidth="775.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controleur">
+  <items>
+    <AnchorPane fx:id="paneBalle" minHeight="367.0" minWidth="773.0" prefHeight="367.0" prefWidth="773.0">
+         <children>
+            <Rectangle fx:id="fond" arcHeight="5.0" arcWidth="5.0" fill="#f1ffeb" height="367.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="773.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="131.0" prefWidth="773.0">
+         <children>
+            
+            <Button fx:id="aide" layoutX="38.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Aide" />
+            <Button fx:id="generer" layoutX="145.0" layoutY="44.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="62.0" text="Générer" />
+            <Button fx:id="reinit" layoutX="35.0" layoutY="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="84.0" text="Réinitialiser" />
+            <Button fx:id="quitter" layoutX="38.0" layoutY="107.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Quitter" />
+            <CheckBox fx:id="effect" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="154.0" text="Effet de lumière" />
+            <ColorPicker fx:id="colorPicker" layoutX="251.0" layoutY="73.0" prefHeight="34.0" prefWidth="103.0" />
+            <Slider fx:id="angle" layoutX="232.0" layoutY="34.0" />
+            <Slider fx:id="vitesse" layoutX="387.0" layoutY="34.0" />
+            <Slider fx:id="rayonSlider" layoutX="387.0" layoutY="83.0" />
+            <Label layoutX="236.0" layoutY="14.0" prefHeight="17.0" prefWidth="140.0" text="0          Angle           360" />
+            <Label layoutX="387.0" layoutY="14.0" prefHeight="17.0" prefWidth="147.0" text="  0      Vitesse(px/s)    200" />
+            <Label layoutX="397.0" layoutY="65.0" prefHeight="17.0" prefWidth="154.0" text="3        Rayon(px)       25" />
+            <Label layoutX="278.0" layoutY="55.0" prefHeight="17.0" prefWidth="70.0" text="Couleur" />
+            <ImageView fitHeight="90.0" fitWidth="96.0" layoutX="605.0" layoutY="10.0">
+               <image>
+                  <Image url="@../../Ressources/russian_balls.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="551.0" layoutY="112.0" prefHeight="22.0" prefWidth="161.0" text="Nombre de particules :">
+               <font>
+                  <Font name="Meiryo" size="13.0" />
+               </font></Label>
+            <Label fx:id="nb" layoutX="701.0" layoutY="115.0" prefHeight="17.0" prefWidth="44.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
